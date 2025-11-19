@@ -22,3 +22,17 @@ HTML comment: Not displayed to the user, might contain hidden information
 
 password attempt: 1 success: 1
 
+Basic Series
+Basic 2
+
+A slightly more difficult challenge, involving an incomplete password script. Requirements: Common sense.
+
+Network Security Sam set up a password protection script. He made it load the real password from an unencrypted text file and compare it to the password the user enters. However, he neglected to upload the password file...
+
+obj> scan source code, find logic flaw, exploit it
+
+Source code check: No user side scripts- script would be server side and hidden, No password files. Script matches password file with user command. Password is missing, hence returns null. To match, we should input null value, which is empty.
+
+Password: Null. Password attempt: 1 success: 1
+
+
