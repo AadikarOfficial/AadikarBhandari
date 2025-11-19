@@ -35,4 +35,19 @@ Source code check: No user side scripts- script would be server side and hidden,
 
 Password: Null. Password attempt: 1 success: 1
 
+Basic Series
+Basic 3
+
+Some intuition is needed to find the location of the hidden password file. Requirements: Basic HTML knowledge
+
+This time Network Security Sam remembered to upload the password file, but there were deeper problems than that.
+
+obj: scan the source code, find flaws to exploit
+
+Line 174:  <input type="hidden" name="file" value="password.php" />
+Password.php looks like a file name. Checking the file. File content: ba03ccec
+
+The input value is matched against the string stored in the file: passport.php. Hence, entering the value stored in the file should lead to an exact match.
+
+Password: ba03ccec. Password attempt: 1 success: 1
 
