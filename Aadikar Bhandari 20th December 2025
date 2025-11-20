@@ -1,4 +1,3 @@
-
 19/11/2025
 13.1 km
 
@@ -50,4 +49,27 @@ Password.php looks like a file name. Checking the file. File content: ba03ccec
 The input value is matched against the string stored in the file: passport.php. Hence, entering the value stored in the file should lead to an exact match.
 
 Password: ba03ccec. Password attempt: 1 success: 1
+
+Basic Series
+Basic 4
+
+An email script has been set up, which sends the password to the administrator. Requirements: HTML knowledge, an email address
+
+obj: scan the source code, learn the mechanism and modify it
+
+This time Sam hardcoded the password into the script. However, the password is long and complex, and Sam is often forgetful. So he wrote a script that would email his password to him automatically in case he forgot. Here is the script:
+
+Line 174:    <input type="hidden" name="to" value="sam@hackthissite.org" /><input type="submit" value="Send password to Sam" /></form></center><br /><br /><center><b>Password:</b><br />
+
+Attempting modification of "to" value from sam's email to a different one. Ctrl Shift + C to launch inspect, modify successful. Send password to sam
+
+Password reminder successfully sent to
+(Note: If this is not the email address on your HackThisSite profile, no email will actually be sent.)
+
+Utilizing hint: adding the email used for the profile, checking mail: 8ca5a306
+
+Password: 8ca5a306. Password attempt: 1 Success: 1
+
+
+
 
