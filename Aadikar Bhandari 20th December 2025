@@ -15,6 +15,8 @@ This level is what we call "The Idiot Test", if you can't complete it, don't giv
 req: HTML- hypertext markup language; the framework for making websites. 
 obj> scan source code, learn how the website works, trace flaws
 
+metd: Ctrl +U to view the source code
+
 Commented line 176: <!-- the first few levels are extremely easy: password is 6ea054e2 -->
 
 HTML comment: Not displayed to the user, might contain hidden information
@@ -70,6 +72,17 @@ Utilizing hint: adding the email used for the profile, checking mail: 8ca5a306
 
 Password: 8ca5a306. Password attempt: 1 Success: 1
 
+Basic Series
+Basic  5
 
+Similar to the previous challenge, but with some extra security measures in place. Requirements: HTML knowledge, JS or FF, an email address.
 
+Sam has gotten wise to all the people who wrote their own forms to get the password. Rather than actually learn the password, he decided to make his email program a little more secure.
+
+obj: scan the source code, figure out the email program, find an exploit
+
+Launch inspector, Ctrl Shift +J, replace sam's email with the registered email. Send password to Sam
+Checking mail: 68e80a15
+
+Password: 68e80a15. Attempt: 1 Success: 1
 
