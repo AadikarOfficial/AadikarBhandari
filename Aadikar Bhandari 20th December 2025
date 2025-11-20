@@ -86,3 +86,26 @@ Checking mail: 68e80a15
 
 Password: 68e80a15. Attempt: 1 Success: 1
 
+Basic Series 
+Basic 6
+
+An encryption system has been set up, which uses an unknown algorithm to change the text given. Requirements: Persistence, some general cryptography knowledge.
+
+Network Security Sam has encrypted his password. The encryption system is publically available and can be accessed with this form:
+
+You have recovered his encrypted password. It is:
+
+ad5d7h>;
+
+Decrypt the password and enter it below to advance to the next level.
+
+obJ: Decrypt the password
+metd: Understanding the encryption algorithm, and decoding the password
+
+Check source code Ctrl +U
+Checking the encryption: STart with 'a' returns 'a'. 'aa' returns 'ab' and 'aaa' returns 'abc'. The encryption goes add nth rank to the nth value in ASCII series. 'aaa' would be 'a+0 a+1 a+2' which would be '97+0 97+1 97+2' calculated to '97 98 99' resulting in 'a b c' as 'abc'.
+
+to decode, we simply remove the nth addition: for ad5d7h>; a-0 d-1 5-2 d-3 7-4 h-5 >-6 ;=7 which results in ac3a3c84
+
+Password: ac3a3c84. Attempt: 1 Success: 1
+
