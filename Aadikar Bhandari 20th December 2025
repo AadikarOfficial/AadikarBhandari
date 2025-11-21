@@ -6,3 +6,33 @@ https://www.hackthissite.org/
 Basic Series
 Basic 7
 
+The password is hidden in an unknown file, and Sam has set up a script to display a calendar. Requirements: Basic UNIX command knowledge.
+
+This time Network Security sam has saved the unencrypted level7 password in an obscurely named file saved in this very directory.
+
+In other unrelated news, Sam has set up a script that returns the output from the UNIX cal command. Here is the script:
+
+Enter the year you wish to view and hit 'view'.
+
+req: terminal commands
+metd: reach the file, validate the password
+
+Dissecting the scenario: Sam has broken the calender command into two parts. The value entered by user is passed through the cal command, which displays the calender. Sam missed that in terminal, we can stack up multiple commands by using ; or & or &&. The hint says there is a file where the password is stored, we simply pass ls for directory listing. 
+
+Output: 
+
+index.php
+level7.php
+cal.pl
+.
+..
+k1kh31b1n55h.php
+
+We check k1kh31b1n55h.php file from the browser so /k1kh31b1n55h.php: 62832940
+
+Password: f866d6b9. Attempt: 1 Success:1
+
+
+
+
+
