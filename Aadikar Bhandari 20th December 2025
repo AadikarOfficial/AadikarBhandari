@@ -52,6 +52,68 @@ Output: au12ha39vc.php index.php level8.php tmp! Check the file via browser: 569
 
 Password: 569c6328. Attempt: 1 Success: 1
 
+Basic Series
+Basic 9
+
+The password is again hidden in an unknown file. However, the script that was previously used to find it has some limitations. Requirements: Knowledge of SSI, unix directory structure.
+
+
+Network Security Sam is going down with the ship - he's determined to keep obscuring the password file, no matter how many times people manage to recover it. This time the file is saved in /var/www/hackthissite.org/html/missions/basic/9/.
+
+In the last level, however, in my attempt to limit people to using server side includes to display the directory listing to level 8 only, I have mistakenly screwed up somewhere.. there is a way to get the obscured level 9 password. See if you can figure out how...
+
+This level seems a lot trickier then it actually is, and it helps to have an understanding of how the script validates the user's input. The script finds the first occurance of '<--', and looks to see what follows directly after it.
+
+metd: Get to level 8, <!--#exec cmd="ls ../../9/" --> Starting inside the root/8/tmp/ folder first ../ leads us to /8/ and the second ../ leads us to root then we enter 9/ and run a directory listing on that directory. so it'll run ls on root/9/
+
+Output: index.php p91e283zc3.php
+The file contains: 92e98ec9
+
+Password:92e98ec9. Attempt: 1 Success: 1
+
+Basic Series
+Basic 10
+
+This time Sam used a more temporary and "hidden" approach to authenticating users, but he didn't think about whether or not those users knew their way around javascript...
+
+Enter password
+Please enter a password to gain access to level 10
+
+req: JS
+
+Let's start with scan of source code, nothing there not very surprising. Let's inspect Ctrl Shift +J to look at what's happening, particularly on the Application tab.
+
+There is a cookie level10_authorized with it's value set to no. Modify value to yes. And submit. The password isn't requried here, we simply authorize the session via the cookie.
+
+Password: null. Attempts: 1 Success: 1
+
+Basic Series
+Basic 11
+
+Sam decided to make a music site. Unfortunately he does not understand Apache. This mission is a bit harder than the other basics.
+
+I love my music! "Empty Sky" is the best!
+
+Interesting observation to add: What to do here? Usually there was a text field to enter password, however, in this one, no such file. Let's check if index.php exists based on previous understanding of the challenges.
+
+Enter correct password:
+
+Okay, we have a field to enter password now. 
+
+Let's check source code of the homepage and this page.
+
+First checking the source code: <!--We even have our own collection - if you could find it!--> interesting comment right there.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
